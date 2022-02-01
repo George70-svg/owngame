@@ -1,0 +1,220 @@
+/****ПЕРЕМЕННЫЕ****/
+
+/****COLORS****/
+$button-color: #00a2e8;
+
+/****FONT****/
+/****Основной шрифт****/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@mixin main-font {
+	font-family: 'Rubik', sans-serif;
+}
+
+/****MIXIN****/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/bg/bg_2.jpg');
+	background-size: contain;
+	@include main-font;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 5vh;
+
+	.header-outer {
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		nav {
+			margin-right: 25px;
+
+			ul {
+
+				li {
+					display: inline-block;
+					background-color: white;
+					min-width: 80px;
+					text-align: center;
+					margin-left: 25px;
+					padding: 5px 10px;
+					border-radius: 15px;
+
+					a {
+						font-size: 16px;
+						color: $button-color;
+						border-bottom: 2px solid transparent;
+						transition: color .2s;
+
+						&:hover {
+							color: darken($button-color, 10%);
+							transition: color .2s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+main {
+	margin: 25px 0;
+
+	.outer-constructor-container {
+
+		.topic {
+			margin: 0px 25px;
+			padding: 25px 0px;
+			border-bottom: 5px dotted gray;
+
+			.header-constructor {
+				display: flex;
+				justify-content: center;
+
+				h2 {
+					font-weight: normal;
+					margin-right: 25px;
+				}
+
+				input {
+					overflow: unset;
+					border: 1px solid gray;
+				}
+			}
+
+			.question-container {
+				display: flex;
+				justify-content: space-evenly;
+				margin-top: 25px;
+
+				.question {
+
+					.question-area {
+
+						p {
+							text-align: center;
+						}
+
+						textarea {
+							margin-top: 10px;
+							overflow: unset;
+							border: 1px solid gray;
+						}
+					}
+
+					.setting-area {
+						display: flex;
+						justify-content: space-evenly;
+
+						p {	
+							display: flex;
+							align-items: center;
+							font-size: 14px;
+
+							input {
+								margin: 5px;
+							}
+						}
+					}
+				}
+			}
+
+			.send-button-container {
+				text-align: center;
+				margin-top: 15px;
+
+				button {
+					padding: 7px 20px;
+					font-size: 16px;
+					border: none;
+					border-radius: 15px;
+					background-color: $button-color;
+					color: white;
+					cursor: pointer;
+
+					&:hover {
+						background-color: darken($button-color, 10%);
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+
+	.outer-upload-container {
+		padding: 15px;
+
+		.inner-upload-container {
+			display: flex;
+			justify-content: center;
+
+			.add-container {
+				flex-basis: 50%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.get-continer {
+				flex-basis: 50%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.upload {
+
+				textarea {
+					margin: 15px;
+				}
+
+				button {
+					padding: 7px 20px;
+					margin: 15px auto 0 auto;
+					font-size: 16px;
+					border: none;
+					border-radius: 15px;
+					background-color: $button-color;
+					color: white;
+					cursor: pointer;
+
+					&:hover {
+						background-color: darken($button-color, 10%);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/****ПЕРЕМЕННЫЕ****/
+/****COLORS****/
+/****FONT****/
+/****Основной шрифт****/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+/****MIXIN****/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/bg/bg_2.jpg");
+  background-size: contain;
+  font-family: 'Rubik', sans-serif; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  margin: 0;
+  padding: 0; }
+
+header {
+  height: 5vh; }
+  header .header-outer {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    header .header-outer nav {
+      margin-right: 25px; }
+      header .header-outer nav ul li {
+        display: inline-block;
+        background-color: white;
+        min-width: 80px;
+        text-align: center;
+        margin-left: 25px;
+        padding: 5px 10px;
+        border-radius: 15px; }
+        header .header-outer nav ul li a {
+          font-size: 16px;
+          color: #00a2e8;
+          border-bottom: 2px solid transparent;
+          transition: color .2s; }
+          header .header-outer nav ul li a:hover {
+            color: #007eb5;
+            transition: color .2s; }
+
+main {
+  margin: 25px 0; }
+  main .outer-constructor-container .topic {
+    margin: 0px 25px;
+    padding: 25px 0px;
+    border-bottom: 5px dotted gray; }
+    main .outer-constructor-container .topic .header-constructor {
+      display: flex;
+      justify-content: center; }
+      main .outer-constructor-container .topic .header-constructor h2 {
+        font-weight: normal;
+        margin-right: 25px; }
+      main .outer-constructor-container .topic .header-constructor input {
+        overflow: unset;
+        border: 1px solid gray; }
+    main .outer-constructor-container .topic .question-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 25px; }
+      main .outer-constructor-container .topic .question-container .question .question-area p {
+        text-align: center; }
+      main .outer-constructor-container .topic .question-container .question .question-area textarea {
+        margin-top: 10px;
+        overflow: unset;
+        border: 1px solid gray; }
+      main .outer-constructor-container .topic .question-container .question .setting-area {
+        display: flex;
+        justify-content: space-evenly; }
+        main .outer-constructor-container .topic .question-container .question .setting-area p {
+          display: flex;
+          align-items: center;
+          font-size: 14px; }
+          main .outer-constructor-container .topic .question-container .question .setting-area p input {
+            margin: 5px; }
+    main .outer-constructor-container .topic .send-button-container {
+      text-align: center;
+      margin-top: 15px; }
+      main .outer-constructor-container .topic .send-button-container button {
+        padding: 7px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 15px;
+        background-color: #00a2e8;
+        color: white;
+        cursor: pointer; }
+        main .outer-constructor-container .topic .send-button-container button:hover {
+          background-color: #007eb5; }
+
+footer .outer-upload-container {
+  padding: 15px; }
+  footer .outer-upload-container .inner-upload-container {
+    display: flex;
+    justify-content: center; }
+    footer .outer-upload-container .inner-upload-container .add-container {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column; }
+    footer .outer-upload-container .inner-upload-container .get-continer {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column; }
+    footer .outer-upload-container .inner-upload-container .upload textarea {
+      margin: 15px; }
+    footer .outer-upload-container .inner-upload-container .upload button {
+      padding: 7px 20px;
+      margin: 15px auto 0 auto;
+      font-size: 16px;
+      border: none;
+      border-radius: 15px;
+      background-color: #00a2e8;
+      color: white;
+      cursor: pointer; }
+      footer .outer-upload-container .inner-upload-container .upload button:hover {
+        background-color: #007eb5; }
+
+/*# sourceMappingURL=styleConstructor.css.map */

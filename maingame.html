@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Своя игра</title>
+	<link rel='shortcut icon' href='img/logo.ico' type='image/x-icon'>
+	<link rel='stylesheet' href='style/styleGame.css'>
+</head>
+<body>
+
+	<!-- Header c nav элементом -->
+	<header>
+		<div class='header-outer'>
+			<nav>
+				<ul>
+					<li><a href='index.html'>игра</a></li>
+					<li><a href='constructor.html'>меню</a></li>
+					<li id='createButton'><p>создать</p></li>
+				</ul>
+
+				<div class='add-continer hide'>
+					<textarea id='addArea' cols='30' rows='10'></textarea>
+					<button class='get-button' id='addButton'>добавить</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<!-- Правый сайдбар для тем -->
+		<aside>
+			<div class='outer-sidebar'>
+				<div class='sidebar-round-control'>
+					<div class='outer-sidebar-round-control'>
+						<div class='control-container1'></div>
+						<div class='control-container'>
+							<button id='showPrev' class='show-prev'>
+								<div class='prevArrow'></div>
+							</button>
+							<div class='round-name' id='roundName'>Раунд 1</div>
+							<button id='showNext' class='show-next'>
+								<div class='prevArrow'></div>
+							</button>
+						</div>
+						<div class='dote-container'>
+							<ul>
+								<li class='dote active' id='dote1'></li>
+								<li class='dote' id='dote2'></li>
+								<li class='dote' id='dote3'></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class='inner-sidebar'>
+					<div id='topic1' class='topic-container'>
+						<p class='topic'>Тема 1</p>
+					</div>
+					<div id='topic2' class='topic-container'>
+						<p class='topic'>Тема 2</p>
+					</div>
+					<div id='topic3' class='topic-container'>
+						<p class='topic'>Тема 3</p>
+					</div>
+					<div id='topic4' class='topic-container'>
+						<p class='topic'>Тема 4</p>
+					</div>
+					<div id='topic5' class='topic-container'>
+						<p class='topic'>Тема 5</p>
+					</div>
+					<div id='topic6' class='topic-container'>
+						<p class='topic'>Тема 6</p>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<!-- Контейнер поля игры -->
+		<section>
+			<div class='outer-game-area'>
+				<div class='outer-game-area-header'>
+					<h2 id='gameAreaHeader'>Раунд 1</h2>
+				</div>
+				<div class="question-area" id='questionArea'>
+					<p id='questionText'></p>
+					<img id='questionImg' src="" alt="">
+					<div class="exit-button" id='closeButton'>&#215</div>
+				</div>
+				<div class='inner-game-area' id='gameArea'>
+					<div id='item1' class='item item1'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item2' class='item item2'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item3' class='item item3'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item4' class='item item4'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item5' class='item item5'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item6' class='item item6'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item7' class='item item7'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item8' class='item item8'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item9' class='item item9'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item10' class='item item10'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item11' class='item item11'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item12' class='item item12'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item13' class='item item13'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item14' class='item item14'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item15' class='item item15'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item16' class='item item16'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item17' class='item item17'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item18' class='item item18'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item19' class='item item19'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item20' class='item item20'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item21' class='item item21'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item22' class='item item22'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item23' class='item item23'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item24' class='item item24'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item25' class='item item25'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item26' class='item item26'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item27' class='item item27'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item28' class='item item28'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item29' class='item item29'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+					<div id='item30' class='item item30'>
+						<div class='left-item'></div>
+						<div class='right-item'></div>
+						<div class='hide-item'>
+							<img class='questionButton' src='img/item.png'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer для вывода имён и очков игроков -->
+	<footer>
+		<aside>
+			
+		</aside>
+		<div class='outer-player-container'>
+			<div class='inner-player-container'>
+				<div class='player player1'>
+					<input type='name'>
+					<div class='point-container'>
+						<button class='button-down button-down-1'>-</button>
+						<p class='players' id='player'>0</p>
+						<button class='button-up button-up-1'>+</button>
+					</div>
+				</div>
+				<div class='player player2'>
+					<input type='name'>
+					<div class='point-container'>
+						<button class='button-down button-down-2'>-</button>
+						<p class='players' id='player'>0</p>
+						<button class='button-up button-up-1'>+</button>
+					</div>
+				</div>
+				<div class='player player3'>
+					<input type='name'>
+					<div class='point-container'>
+						<button class='button-down button-down-3'>-</button>
+						<p class='players' id='player'>0</p>
+						<button class='button-up button-up-1'>+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script src='javascript/gameInfo.js'></script>
+<script src='javascript/game.js'></script>
+</html>
